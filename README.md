@@ -1,0 +1,2 @@
+# interview
+python interview questions 
