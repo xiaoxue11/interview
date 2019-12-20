@@ -16,8 +16,10 @@ def get_files(fp):
     """
     with open(fp, 'r+') as f:
         m = mmap(f.fileno(), 0)
+        # print(m)
         temp = 0
         for i, char in enumerate(m):
+            # print(i, char)
             if char == b'\n':
                 yield m[temp:i+1].decode()
                 temp = i+1

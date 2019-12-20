@@ -15,10 +15,10 @@ def get_large_file_content(fp):
     :return: get a generator by yield
     """
     with open(fp, 'r+') as f:
-        for i in f:
+        for j in f:
             # print(type(i))
             # print(i)
-            yield i
+            yield j
 
 
 if __name__ == '__main__':
@@ -28,5 +28,5 @@ if __name__ == '__main__':
     #     print(text)
     ret = get_large_file_content('test.txt')
     print(type(ret))
-    # for i in ret:
-    #     print(i)
+    for i in ret:
+        print(i)

@@ -7,11 +7,13 @@ import glob
 
 
 def func(fp, postfix):
-    pattern = f"{fp}/*{postfix}"
+    # pattern = f"{fp}/*{postfix}"
+    pattern = "{}/*{}".format(fp, postfix)
     print(pattern)
     for i in glob.iglob(pattern):
         print(i)
 
 
-func('.', '.py')
+if __name__ == '__main__':
+    func('.', '.py')
 

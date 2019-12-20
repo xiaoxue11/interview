@@ -4,6 +4,7 @@ import os
 def get_files(dir, suffix):
     ret = []
     for root, dirs, files in os.walk(dir):
+        print(root, dirs)
         for filename in files:
             name, suf = os.path.splitext(filename)
             if suf == suffix:
