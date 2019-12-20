@@ -9,6 +9,7 @@ print(list(c))
 
 b = {}
 b = b.fromkeys(a)
+print(b)
 c = list(b.keys())
 print(c)
 
@@ -22,7 +23,7 @@ for i in range(len(l1)):
 
 
 def multi():
-    return [lambda x: i*x for i in range(4)]
+    return [lambda x: i * x for i in range(4)]
 
 
 for m in multi():
@@ -36,24 +37,24 @@ a = 15
 print(c)
 
 print(dir('a'))
-print("*"*50)
-print(list(map(lambda x: x*x, [y for y in range(3)])))
+print("*" * 50)
+print(list(map(lambda x: x * x, [y for y in range(3)])))
 # print(list_data.count())
 
-print(1/4+0.75)
+print(1 / 4 + 0.75)
 print(dict(([1, 2], [3, 4])))
 print(set('123'))
 temp = frozenset((1, 2, 4))
 print(type(temp))
 print(temp)
 print('hello' is 'hello')
-a=b=c=1
-a+=b
-a,b=b,a
-x=[1,2]
-y=[3,4]
-print(x+y)
+a = b = c = 1
+a += b
+a, b = b, a
+x = [1, 2]
+y = [3, 4]
+print(x + y)
 
-num=8
-if num>=0 and num<=10:
+num = 8
+if 0 <= num <= 10:
     print(num)

@@ -25,6 +25,8 @@ def atoi_1(s):
     num = 0
     for v in s:
         temp = eval(v)
+        print(temp)
+        print(type(temp))
         num = num*10 + temp
     print(num)
 
